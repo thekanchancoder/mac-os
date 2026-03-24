@@ -1,14 +1,19 @@
-import React from 'react'
-import MacWindow from './MacWindow'
-import './sportify.scss'
-const Sportify = () => {
+import React from "react";
+import MacWindow from "./MacWindow";
+import "./sportify.scss";
+const Sportify = ({  windowName, setwindowState  }) => {
   return (
-    <MacWindow width="max(20vw,20rem)">
+    <MacWindow
+      width="max(20vw,20rem)"
+     
+      windowName={windowName}
+      setwindowState={setwindowState}
+    >
       <div className="sportify-window">
         <iframe
           data-testid="embed-iframe"
           style={{ borderRadius: "12px" }}
-          src="https://open.spotify.com/embed/playlist/1aqKaWLMH7FpByDzriUiSc?utm_source=generator&theme=0" 
+          src="https://open.spotify.com/embed/playlist/1aqKaWLMH7FpByDzriUiSc?utm_source=generator&theme=0"
           width="100%"
           height="352"
           frameBorder="0"
@@ -18,7 +23,7 @@ const Sportify = () => {
         ></iframe>
       </div>
     </MacWindow>
-  )
-}
+  );
+};
 
-export default Sportify
+export default Sportify;

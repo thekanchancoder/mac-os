@@ -11,6 +11,9 @@ padding-block: 0.75rem;
 border-radius: 0.75rem;
 
     .icon{
+         position: relative;
+  display: inline-block;
+
         width: 3.5rem;
         padding: 0.5rem;
         border-radius: 0.5rem;
@@ -21,6 +24,27 @@ border-radius: 0.75rem;
         transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1); ;
 
     }
+
+.tooltip{
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e5e5e5;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.icon:hover .tooltip{
+  opacity: 1;
+}
+
+
+
     .github{
        background-color: black;
     }
