@@ -1,5 +1,5 @@
 import React from "react";
-import MacWindow from "./MacWindow";
+import MacWindow from "./macwindow";
 import "./sportify.scss";
 const Sportify = ({  windowName, setwindowState  }) => {
   return (

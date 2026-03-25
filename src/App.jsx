@@ -31,7 +31,7 @@ function App() {
         <Resume windowName="Resume" setwindowState={setwindowState} />
       )}
       {windowState.sportify && (
-        <Sportify windowName="Spotify" setwindowState={setwindowState} />
+        <Sportify windowName="sportify" setwindowState={setwindowState} />
       )}
       {windowState.cli && (
         <Cli windowName="CLI" setwindowState={setwindowState} />
